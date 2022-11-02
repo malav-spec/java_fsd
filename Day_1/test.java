@@ -138,5 +138,16 @@ public class test {
 
 //        Q10.
         System.out.println(getLargestWord("ABC DEF"));
+
+//        Q11.
+        StringSwap("Hello", "world");
+    }
+
+    private static void StringSwap(String s1, String s2) {
+        s1 += " " + s2;
+        s2 = s1.split(" ")[0];
+        s1 = s1.split(" ")[1];
+
+        System.out.println(s1 + " " + s2);
     }
 }
